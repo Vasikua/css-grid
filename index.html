@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>CatHouse</title>
+    <title>Project</title>
 </head>
 
 <body>
@@ -24,12 +24,14 @@
                 <li class="post">
                     <a href="#">
                         <picture>
-                            <!-- For viewports between 320px and 768px -->
-                            <source media="(max-width: 767px)" srcset="img/picture-1-small.png">
                             <!-- For viewports wider than 768px -->
                             <source media="(min-width: 768px)" srcset="img/picture-1.png">
+
+                            <!-- For viewports between 320px and 768px -->
+                            <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/picture-1-small.png">
+
                             <!-- Fallback content -->
-                            <img src="img/picture-1.png" alt="Description of Image">
+                            <img src="img/picture-1-small.png" alt="Description of Image">
                         </picture>
                         <div class="overlay">
                             <h2 class="post-title sub-title">Коти та їхні чудові навички: від полювання до загадкових
@@ -106,7 +108,6 @@
                         </a>
                     </li>
                 </ul>
-              
                 <div class="socials">
                     <h2 class="socials-title title">Соцмережі</h2>
                     <ul class="socials-list">
@@ -152,16 +153,16 @@
                     <h2 class="video-title title">Відео з пухнастиком</h2>
                     <img src="./img/picture.png" alt="video">
                 </div>
-               
             </section>
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <img src="./img/cat.svg" alt="cat" class="logo">
             <h2 class="label">Котодім</h2>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
